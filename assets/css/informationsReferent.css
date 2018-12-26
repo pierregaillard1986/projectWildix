@@ -1,0 +1,32 @@
+ body{
+    background-color: #003157;
+    background-image:radial-gradient(#2E6078, #003157);
+    background-repeat: no-repeat;
+    /* width: 100vw;
+    height: 100vh; */
+}
+.card{
+    margin-top: 1%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #003157 !important;
+    color: #F5F5F5 !important;
+}
+#modaleConfimationInformationReferent {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    top: 20%;
+    left: 24%;
+    padding: 2%!important;
+ }
+ #mainsCard{
+    visibility: visible;
+    z-index: 1;
+ }
+ sub{
+     color: red;
+     font-size: 0.7rem;
+ }

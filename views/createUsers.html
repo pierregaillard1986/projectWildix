@@ -1,29 +1,131 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="./assets/img/cminLogo.png">
-  <title>création des utilisateurs</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/img/cminLogo.png">
+    <title>création des utilisateurs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/createUser.css">
 </head>
 
 <body>
-  <div class="card connect col-6 offset-3">
-    <div class="card-body">
-        <p>bonjour</p>
+    <div class="card connect col-6 offset-3">
+        <div class="card-body">
+            <p class="card-title text-center">
+                Merci d'indiquer le nombre d'utilisateurs Wildix de votre entreprise
+            </p>
+            <div class="row justify-content-around">
+                <div>
+                    <label for="userNumber">Nombre d'utilisateur :</label>
+                    <input type="text" id="userNumber">
+                </div>
+                <div>
+                    <button class="btn" type="submit">Valider</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+    <div class="card connect col-10 offset-1">
+        <form class="mt-3 mb-3 ml-3 mr-3">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name&firstName">Nom et Prénom:</label>
+                    <input type="text" class="form-control" id="name&firstName" placeholder="Martin Julien">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="login">Login :</label>
+                    <input type="text" class="form-control" id="login" placeholder="Julien">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="internalNumber">Numéro interne :</label>
+                    <input type="text" class="form-control" id="internalNumber" placeholder="2XX">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="fax">Fax :</label>
+                    <input type="tel" class="form-control" id="fax" placeholder="+332XXXXXXXX">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="printNumber">Numéro de présentation :</label>
+                    <input type="tel" class="form-control" id="printNumber" placeholder="+332XXXXXXXX">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="portable">Numéro de portable :</label>
+                    <input type="tel" class="form-control" id="Portable" placeholder="+336XXXXXXXX">
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="service">Service :</label>
+                    <input type="text" class="form-control" id="service" placeholder="administratif">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Email">Email :</label>
+                    <input type="email" class="form-control" id="email" placeholder="xxx@xx.com">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <a class="btn">
+                    Ajouter l'utilisateur
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="card connect col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">ID</th>
+                    <th scope="col" class="text-center">Nom d'utilisateur</th>
+                    <th scope="col" class="text-center">Login</th>
+                    <th scope="col" class="text-center">téléphone interne</th>
+                    <th scope="col" class="text-center">FAX</th>
+                    <th scope="col" class="text-center">Numéro présenté</th>
+                    <th scope="col" class="text-center">Email</th>
+                    <th scope="col" class="text-center">Portable</th>
+                    <th scope="col" class="text-center">Service</th>
+                    <th scope="col" class="text-center">Editer</th>
+                    <th scope="col" class="text-center">Supprimer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-center">1</th>
+                    <td scope="row" class="text-center">Pierre Gaillard</td>
+                    <td scope="row" class="text-center">Pierre</td>
+                    <td scope="row" class="text-center">200</td>
+                    <td scope="row" class="text-center">0234401090</td>
+                    <td scope="row" class="text-center">0234401010</td>
+                    <td scope="row" class="text-center">pierre.gaillard@cmin.fr</td>
+                    <td scope="row" class="text-center">0760177738</td>
+                    <td scope="row" class="text-center">Technique</td>
+                    <td scope="row" class="text-center">
+                        <a class="btn">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </td>
+                    <td scope="row" class="text-center">
+                        <a class="btn">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
